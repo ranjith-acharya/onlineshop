@@ -46,6 +46,51 @@
 		<script src="vendor/modernizr/modernizr.js"></script>
 
 	</head>
+	<style>
+	 #name{
+		outline:none;
+		border:2px solid #a9a9a9;
+		border-top-style:none;
+		border-right-style:none;
+		border-left-style:none;
+	 }
+	 #name:focus{
+		border-bottom-color:#0084ff;
+		transition:0.5s;
+	 }
+	 #email{
+		outline:none;
+		border:2px solid #a9a9a9;
+		border-top-style:none;
+		border-right-style:none;
+		border-left-style:none;
+	 }
+	 #email:focus{
+		border-bottom-color:#0084ff;
+		transition:0.5s;
+	 }
+	 #subject{
+		outline:none;
+		border:2px solid #a9a9a9;
+		border-top-style:none;
+		border-right-style:none;
+		border-left-style:none;
+	 }
+	 #subject:focus{
+		border-bottom-color:#0084ff;
+		transition:0.5s;
+	 }
+	 #message{
+		outline:none;
+		border:2px solid #a9a9a9;
+		border-top-style:none;
+		border-right-style:none;
+	 }
+	 #message:focus{
+		border-color:#0084ff;
+		transition:0.5s;
+	 }
+	</style>
 	<body>
 
 		<div class="body">
@@ -312,33 +357,33 @@
 								<strong>Error!</strong> There was an error sending your message.
 							</div>
 
-							<h2 class="mb-sm mt-sm"><strong>Contact</strong> Us</h2>
+							<h2 class="heading-primary mb-sm mt-sm"><strong>Contact</strong> Us</h2>
 							<form id="contactForm" action="php/contact-form.php" method="POST">
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-6">
-											<label>Your name *</label>
-											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+											<label>Your Name *</label></br>
+											<input type="text" value="" data-msg-required="Please Enter your Name." maxlength="100" name="name" id="name" required>
 										</div>
 										<div class="col-md-6">
-											<label>Your email address *</label>
-											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+											<label>Your Email Address *</label></br>
+											<input type="email" value="" data-msg-required="Please Enter your Email Address." data-msg-email="Please Enter a Valid Email Address." maxlength="100" name="email" id="email" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<label>Subject</label>
-											<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
+											<label>Subject</label></br>
+											<input type="text" value="" data-msg-required="Please Enter the Subject." maxlength="100" name="subject" id="subject" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<label>Message *</label>
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
+											<label>Message *</label></br>
+											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" cols="40" name="message" id="message" required></textarea>
 										</div>
 									</div>
 								</div>
@@ -350,15 +395,15 @@
 							</form>
 						</div>
 						<div class="col-md-6">
-
+							
 							<h4 class="heading-primary mt-lg">Get in <strong>Touch</strong></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p>Feel Free to Send Us your Opinion about,<span class="text-primary" style="font-size:22px;"> Paradise.!!</span></p>
 
 							<hr>
 
 							<h4 class="heading-primary">The <strong>Office</strong></h4>
 							<ul class="list list-icons list-icons-style-3 mt-xlg">
-								<li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</li>
+								<li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, India</li>
 								<li><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-789</li>
 								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
 							</ul>
@@ -367,10 +412,11 @@
 
 							<h4 class="heading-primary">Business <strong>Hours</strong></h4>
 							<ul class="list list-icons list-dark mt-xlg">
-								<li><i class="fa fa-clock-o"></i> Monday - Friday 9am to 5pm</li>
+								<li><i class="fa fa-clock-o"></i> Monday - Friday - 9am to 5pm</li>
 								<li><i class="fa fa-clock-o"></i> Saturday - 9am to 2pm</li>
 								<li><i class="fa fa-clock-o"></i> Sunday - Closed</li>
 							</ul>
+							<hr>
 
 						</div>
 
@@ -379,22 +425,6 @@
 				</div>
 
 			</div>
-
-			<section class="call-to-action call-to-action-default with-button-arrow call-to-action-in-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="call-to-action-content">
-								<h3>Porto is <strong>everything</strong> you need to create an <strong>awesome</strong> website!</h3>
-								<p>The <strong>#1 Selling</strong> HTML Site Template on ThemeForest</p>
-							</div>
-							<div class="call-to-action-btn">
-								<a href="http://themeforest.net/item/porto-responsive-html5-template/4106987" target="_blank" class="btn btn-lg btn-primary">Buy Now!</a><span class="arrow hlb hidden-xs hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -12px;"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<footer id="footer">
 				<div class="container">
@@ -405,7 +435,7 @@
 						<div class="col-md-3">
 							<div class="newsletter">
 								<h4>Newsletter</h4>
-								<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+								<p>Keep up on our always evolving Product and Latest Trends. Enter your e-mail and subscribe to our newsletter.</p>
 			
 								<div class="alert alert-success hidden" id="newsletterSuccess">
 									<strong>Success!</strong> You've been added to our email list.
@@ -433,7 +463,7 @@
 							<div class="contact-details">
 								<h4>Contact Us</h4>
 								<ul class="contact">
-									<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</p></li>
+									<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, India</p></li>
 									<li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-789</p></li>
 									<li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
 								</ul>
@@ -454,18 +484,16 @@
 						<div class="row">
 							<div class="col-md-1">
 								<a href="index.html" class="logo">
-									<img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
+									<img alt="Paradise" class="img-responsive" src="img/.png">
 								</a>
 							</div>
 							<div class="col-md-7">
-								<p>© Copyright 2015. All Rights Reserved.</p>
+								<p>© Copyright 2018. All Rights Reserved.</p>
 							</div>
 							<div class="col-md-4">
 								<nav id="sub-menu">
 									<ul>
-										<li><a href="page-faq.html">FAQ's</a></li>
-										<li><a href="sitemap.html">Sitemap</a></li>
-										<li><a href="contact-us.html">Contact</a></li>
+										<li><a href="contact-us.html">Contact Us</a></li>
 									</ul>
 								</nav>
 							</div>
